@@ -48,3 +48,7 @@ Convert a powershell object to Json and paste the Json into the groups info/note
     ServicePlanNameToDisable = @() 
 } | convertto-json
 ```
+
+## Test
+To test against a single user or a limited user set. Change the line `$azureAdUsers = Get-AzureADUser -All $true` to target your test users. 
+`$azureAdUsers = Get-AzureADUser -SearchString Average_Joe`
